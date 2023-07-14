@@ -1,0 +1,22 @@
+{
+  "stableAssets": [
+    {
+      "address": "0x512E48836Cd42F3eB6f50CEd9ffD81E0a7F15103",
+      "symbol": "USDC"
+    },
+    {
+      "address": "0x6eEf939FC6e2B3F440dCbB72Ea81Cd63B5a519A5",
+      "symbol": "USDT"
+    }
+  ],
+  "pricingAssets": [
+    {
+      "address": "0x11adC2d986E334137b9ad0a0F290771F31e9517F",
+      "symbol": "WNEON"
+    },
+    {
+      "address": "0xc7Fc9b46e479c5Cb42f6C458D1881e55E6B7986c",
+      "symbol": "WSOL"
+    }
+  ]
+}
