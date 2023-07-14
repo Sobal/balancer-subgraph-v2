@@ -722,3 +722,65 @@ polygon-zkevm:
   ManagedPoolV2Factory:
     address: "0xaf779e58dafb4307b998C7b3C9D3f788DFc80632"
     startBlock: 220536
+
+
+neonlabs:
+  network: neonlabs
+  # graft:
+    # Mar 30
+    # block: 16938731
+    # always make sure the base subgraph has not been pruned
+    # it should be possible to run time travel queries on it going back to the vault's startBlock
+    # base: QmQnxRrmWbFUTfLFeHv8qi6Tf7ZMfrUVqoK7tvbF1tapbM
+  # EventEmitter:
+  #   address: "0x1ACfEEA57d2ac674d7E65964f155AB9348A6C290"
+  #   startBlock: 16419620
+  Vault:
+    address: "0x2e80d2Bf2a356F02c865cCc033EcC41746EA2Fe0"
+    startBlock: 229478797
+  WeightedPoolFactory:
+    address: "0x3ED2C9dE3973c51685aE8337563a66Ae895C6139"
+    startBlock: 229478797
+  # WeightedPoolV2Factory:
+  #   address: "0xcC508a455F5b0073973107Db6a878DdBDab957bC"
+  #   startBlock: 15497271
+  # WeightedPoolV3Factory:
+  #   address: "0x5Dd94Da3644DDD055fcf6B3E1aa310Bb7801EB8b"
+  #   startBlock: 16520627
+  # WeightedPoolV4Factory:
+  #   address: "0x12e1524F8855b683ff96B770F5ce004A35B48033"
+  #   startBlock: 229110919
+  # WeightedPool2TokenFactory:
+  #   address: "0x79FD4F02d99715c93b33F31835a6d655D0AEEacB"
+  #   startBlock: 229110919
+  # StablePoolFactory:
+  #   address: "0xc66Ba2B6595D3613CCab350C886aCE23866EDe24"
+  #   startBlock: 12703127
+  # StablePoolV2Factory:
+  #   address: "0x8df6EfEc5547e31B0eb7d1291B511FF8a2bf987c"
+  #   startBlock: 14934936
+  # ComposableStablePoolFactory:
+  #   address: "0xf9ac7B9dF2b3454E841110CcE5550bD5AC6f875F"
+  #   startBlock: 15485885
+  # ComposableStablePoolV2Factory:
+  #   address: "0x85a80afee867aDf27B50BdB7b76DA70f1E853062"
+  #   startBlock: 16083775
+  # ComposableStablePoolV3Factory:
+  #   address: "0xdba127fBc23fb20F5929C546af220A991b5C6e01"
+  #   startBlock: 16520627
+  # ComposableStablePoolV4Factory:
+  #   address: "0xfADa0f4547AB2de89D1304A668C39B3E09Aa7c76"
+  #   startBlock: 16878679
+  # ComposableStablePoolV5Factory:
+  #   address: "0xDB8d758BCb971e482B2C45f7F8a7740283A1bd3A"
+  #   startBlock: 17643198
+  # HighAmpComposableStablePoolFactory:
+  #   address: "0xBa1b4a90bAD57470a2cbA762A32955dC491f76e0"
+  #   startBlock: 15852258
+  # MetaStablePoolFactory:
+  #   address: "0x67d27634E44793fE63c467035E31ea8635117cd4"
+  #   startBlock: 13011941
+
+  # ProtocolIdRegistry:
+  #   address: "0xc3ccacE87f6d3A81724075ADcb5ddd85a8A1bB68"
+  #   startBlock: 16719996
