@@ -125,96 +125,13 @@ mainnet:
     startBlock: 16719996
 goerli:
   network: goerli
-  EventEmitter:
-    address: "0x4bcFCEDF1114030ff85a647dD436B7b3dEb45d9E"
-    startBlock: 8305794
   Vault:
-    address: "0xBA12222222228d8Ba445958a75a0704d566BF2C8"
-    startBlock: 4648099
-  WeightedPoolFactory:
-    address: "0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9"
-    startBlock: 4648101
-  WeightedPoolV2Factory:
-    address: "0x94f68b54191F62f781Fe8298A8A5Fa3ed772d227"
-    startBlock: 7553858
-  WeightedPoolV3Factory:
-    address: "0x26575A44755E0aaa969FDda1E4291Df22C5624Ea"
-    startBlock: 8456831
+    address: "0xeF2FE55ea762a7d681a4c2E76Ba065a3e3EF70b1"
+    startBlock: 9355817
   WeightedPoolV4Factory:
-    address: "0x230a59F4d9ADc147480f03B0D3fFfeCd56c3289a"
-    startBlock: 8694778
-  WeightedPool2TokenFactory:
-    address: "0xA5bf2ddF098bb0Ef6d120C98217dD6B141c74EE0"
-    startBlock: 4716924
-  StablePoolFactory:
-    address: "0x44afeb87c871D8fEA9398a026DeA2BD3A13F5769"
-    startBlock: 6992992
-  StablePoolV2Factory:
-    address: "0xD360B8afb3d7463bE823bE1Ec3c33aA173EbE86e"
-    startBlock: 7169381
-  ComposableStablePoolFactory:
-    address: "0xB848f50141F3D4255b37aC288C25C109104F2158"
-    startBlock: 7542764
-  ComposableStablePoolV2Factory:
-    address: "0x85a80afee867aDf27B50BdB7b76DA70f1E853062"
-    startBlock: 8048814
-  ComposableStablePoolV3Factory:
-    address: "0xbfD9769b061E57e478690299011A028194D66e3C"
-    startBlock: 8456835
-  ComposableStablePoolV4Factory:
-    address: "0x1802953277FD955f9a254B80Aa0582f193cF1d77"
-    startBlock: 8695012
-  ComposableStablePoolV5Factory:
-    address: "0x4bdCc2fb18AEb9e2d281b0278D946445070EAda7"
-    startBlock: 9306452
-  HighAmpComposableStablePoolFactory:
-    address: "0x35802d6f8fe133215E1804EB70748fe39F10F318"
-    startBlock: 7842251
-  MetaStablePoolFactory:
-    address: "0xA55F73E2281c60206ba43A3590dB07B8955832Be"
-    startBlock: 6993057
-  LiquidityBootstrappingPoolFactory:
-    address: "0xb48Cc42C45d262534e46d5965a9Ac496F1B7a830"
-    startBlock: 6993037
-  TempLiquidityBootstrappingPoolFactory:
-    address: "0xB0C726778C3AE4B3454D85557A48e8fa502bDD6A"
-    startBlock: 6993471
-  InvestmentPoolFactory:
-    address: "0x3C9F788131A26329A689Bd951b5aCb4454669487"
-    startBlock: 6993461
-  ManagedPoolV2Factory:
-    address: "0x03F3Fb107e74F2EAC9358862E91ad3c692712054"
-    startBlock: 8825563
-  StablePhantomPoolFactory:
-    address: "0x41E9036AE350baEDCC7107760A020Dca3c0731ec"
-    startBlock: 6993896
-  AaveLinearPoolFactory:
-    address: "0x94470C12fc192e071F12Fec1152861608CE01562"
-    startBlock: 6993887
-  AaveLinearPoolV2Factory:
-    address: "0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD"
-    startBlock: 7421371
-  AaveLinearPoolV3Factory:
-    address: "0x70Bbd023481788e443472e123AB963e5EBF58D06"
-    startBlock: 8094401
-  AaveLinearPoolV4Factory:
-    address: "0x76578ecf9a141296Ec657847fb45B0585bCDa3a6"
-    startBlock: 8469020
-  ERC4626LinearPoolFactory:
-    address: "0xdc15A3C5D16413C1C1F75Db0f75c4ae2a4104650"
-    startBlock: 7169160
-  EulerLinearPoolFactory:
-    address: "0x813EE7a840CE909E7Fea2117A44a90b8063bd4fd"
-    startBlock: 8459393
-  ERC4626LinearPoolV3Factory:
-    address: "0xBa240C856498e2d7a70AF4911AaFae0D6b565a5B"
-    startBlock: 8458088
-  GyroEPoolFactory:
-    address: "0x3477fe0444878C168A87459F8167EEF28FCF956c"
-    startBlock: 7928618
-  ProtocolIdRegistry:
-    address: "0x4fb47126Fa83A8734991E41B942Ac29A3266C968"
-    startBlock: 8566340
+    address: "0x2ab7BDBcD75C5f0190489F39D5Ee1702883E35A6"
+    startBlock: 9355817
+
 polygon:
   network: matic
   graft:

@@ -294,6 +294,19 @@ function handlePoolJoined(event: PoolBalanceChanged): void {
 function handlePoolExited(event: PoolBalanceChanged): void {
   let poolId = event.params.poolId.toHex();
   let amounts = event.params.deltas;
+  log.warning('LOG::handlePoolExited:', []);
+  log.warning('params.deltas length: {} ', [event.params.deltas.length.toString()]);
+  for (let r: i32 = 0; r < event.params.deltas.length; r++) {
+    log.warning('deltas[{}]: {} ', [r.toString(), event.params.deltas[r].toString()]);
+  }
+  log.warning('params.tokens length: {} ', [event.params.tokens.length.toString()]);
+  for (let r: i32 = 0; r < event.params.tokens.length; r++) {
+    log.warning('tokens[{}]: {} ', [r.toString(), event.params.tokens[r].toString()]);
+  }
+  log.warning('params.protocolFeeAmounts length: {} ', [event.params.protocolFeeAmounts.length.toString()]);
+  for (let r: i32 = 0; r < event.params.protocolFeeAmounts.length; r++) {
+    log.warning('protocolFeeAmounts[{}]: {} ', [r.toString(), event.params.protocolFeeAmounts[r].toString()]);
+  }
   let protocolFeeAmounts: BigInt[] = event.params.protocolFeeAmounts;
   let blockTimestamp = event.block.timestamp.toI32();
   let logIndex = event.logIndex;
@@ -306,17 +319,22 @@ function handlePoolExited(event: PoolBalanceChanged): void {
   }
   let tokenAddresses = pool.tokensList;
 
+
+
   let exitId = transactionHash.toHexString().concat(logIndex.toString());
   let exit = new JoinExit(exitId);
   exit.sender = event.params.liquidityProvider;
   let exitAmounts = new Array<BigDecimal>(amounts.length);
   let valueUSD = ZERO_BD;
+  log.warning('LOG:handlePoolExited::token addresses, loading pools tokens', [])
   for (let i: i32 = 0; i < tokenAddresses.length; i++) {
+    log.warning('token {} address', [i.toString(), tokenAddresses[i].toHexString()])
     let tokenAddress: Address = Address.fromString(tokenAddresses[i].toHexString());
     let poolToken = loadPoolToken(poolId, tokenAddress);
     if (poolToken == null) {
       throw new Error('poolToken not found');
     }
+    log.warning('setting value in usd for token', [])
     let exitAmount = scaleDown(amounts[i].neg(), poolToken.decimals);
     exitAmounts[i] = exitAmount;
     let tokenExitAmountInUSD = valueInUSD(exitAmount, tokenAddress);
@@ -330,9 +348,12 @@ function handlePoolExited(event: PoolBalanceChanged): void {
   exit.tx = transactionHash;
   exit.valueUSD = valueUSD;
   exit.save();
-
+  
   let protocolFeeUSD = ZERO_BD;
+  log.warning('loading tokens', [])
   for (let i: i32 = 0; i < tokenAddresses.length; i++) {
+    log.warning('token {} address', [i.toString(), tokenAddresses[i].toHexString()])
+
     let tokenAddress: Address = Address.fromString(tokenAddresses[i].toHexString());
     let poolToken = loadPoolToken(poolId, tokenAddress);
 
@@ -378,6 +399,7 @@ function handlePoolExited(event: PoolBalanceChanged): void {
   vault.save();
   // create or update balancer's vault snapshot
   getBalancerSnapshot(vault.id, blockTimestamp);
+  log.warning('add historical pool liquidity record', [])
 
   for (let i: i32 = 0; i < tokenAddresses.length; i++) {
     let tokenAddress: Address = Address.fromString(tokenAddresses[i].toHexString());

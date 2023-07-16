@@ -1,4 +1,4 @@
-import { BigDecimal, Address, BigInt, ethereum, Bytes } from '@graphprotocol/graph-ts';
+import { BigDecimal, Address, BigInt, ethereum, Bytes, log } from '@graphprotocol/graph-ts';
 import {
   Pool,
   User,
@@ -323,6 +323,7 @@ export function createToken(tokenAddress: Address): Token {
 export function getToken(tokenAddress: Address): Token {
   let token = Token.load(tokenAddress.toHexString());
   if (token == null) {
+    log.warning('creating token: {}', [tokenAddress.toHexString()])
     token = createToken(tokenAddress);
   }
   return token;
