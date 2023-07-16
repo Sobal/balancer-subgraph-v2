@@ -48,12 +48,14 @@ let network: string = dataSource.network();
 let vaultAddressByNetwork: AddressByNetwork = {
   canonical: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   custom: '0x0000000000000000000000000000000000000000',
-  neonlabs: '0x2e80d2Bf2a356F02c865cCc033EcC41746EA2Fe0'
+  neonlabs: '0x49CEEC2DaC51AEF3CEAa7d866F5d2488F1814D48',
 };
 
 function forNetwork(addressByNetwork: AddressByNetwork, network: string): Address {
   if (network == 'custom') {
     return Address.fromString(addressByNetwork.custom);
+  } else if (network == 'neonlabs') {
+    return Address.fromString(addressByNetwork.neonlabs);
   } else {
     return Address.fromString(addressByNetwork.canonical);
   }

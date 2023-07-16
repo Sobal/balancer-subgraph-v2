@@ -733,14 +733,11 @@ neonlabs:
     # it should be possible to run time travel queries on it going back to the vault's startBlock
     # base: QmQnxRrmWbFUTfLFeHv8qi6Tf7ZMfrUVqoK7tvbF1tapbM
   Vault:
-    address: "0x2e80d2Bf2a356F02c865cCc033EcC41746EA2Fe0"
-    startBlock: 229478797
-  WeightedPoolFactory:
-    address: "0x3ED2C9dE3973c51685aE8337563a66Ae895C6139"
-    startBlock: 229478797
+    address: "0x49CEEC2DaC51AEF3CEAa7d866F5d2488F1814D48"
+    startBlock: 230050689
   WeightedPoolV4Factory:
-    address: "0xc828AbdEbe975d4d6e0345eB48d569A49A194A84"
-    startBlock: 229567385
+    address: "0x2a48D000Ff815C3AE571c5121993150B600a6AF2"
+    startBlock: 230055533
   ComposableStablePoolV5Factory:
-    address: "0x2297E369aa665f1cE2eCB9eBe4Ec0E6D9f02f72D"
-    startBlock: 229566582
+    address: "0x314fF5B1e0A0F3cB7048819517aFf9B9d608b5A9"
+    startBlock: 230055143
