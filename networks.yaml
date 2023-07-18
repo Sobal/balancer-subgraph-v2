@@ -737,7 +737,7 @@ neonlabs:
     startBlock: 230050689
   WeightedPoolV4Factory: #no pause
     address: "0x0AEF3105c4F84d2c3CB4789C13c7f63680Fa6366"
-    startBlock: 230317769
+    startBlock: 230521170
   ComposableStablePoolV5Factory: #no pause
     address: "0x000be463FCafEF5A20B20E9AA0b07e0b3B51875a"
-    startBlock: 230486415
+    startBlock: 230521979
