@@ -48,7 +48,7 @@ let network: string = dataSource.network();
 let vaultAddressByNetwork: AddressByNetwork = {
   canonical: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
   custom: '0x0000000000000000000000000000000000000000',
-  neonlabs: '0x3Ff78B826107b2FE41aDfbf9b2730658B3e52789',
+  neonlabs: '0x7122e35ceC2eED4A989D9b0A71998534A203972C',
 };
 
 function forNetwork(addressByNetwork: AddressByNetwork, network: string): Address {
