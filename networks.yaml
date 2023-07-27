@@ -724,8 +724,8 @@ polygon-zkevm:
     startBlock: 220536
 
 
-neonlabs:
-  network: neonlabs
+neonmainnet:
+  network: neonmainnet
   # graft:
     # Mar 30
     # block: 16938731
@@ -745,5 +745,29 @@ neonlabs:
     address: "0x08e3814aD06be2A555a4c0d330A20078e5344DFd"
     startBlock: 206169260
   # ERC4626LinearPoolV4Factory:
-  #   address: "0xa7739e85ef4FD49Ca19073637D88b7e8D9A0CCe8"
-  #   startBlock: 205932819
+  #   address: ""
+  #   startBlock: 
+
+neondevnet:
+  network: neondevnet
+  # graft:
+    # Mar 30
+    # block: 16938731
+    # always make sure the base subgraph has not been pruned
+    # it should be possible to run time travel queries on it going back to the vault's startBlock
+    # base: QmQnxRrmWbFUTfLFeHv8qi6Tf7ZMfrUVqoK7tvbF1tapbM
+  Vault:
+    address: "0x7122e35ceC2eED4A989D9b0A71998534A203972C"
+    startBlock: 230609569
+  WeightedPoolV4Factory:
+    address: "0x8D88057B8CC9235d4C69db3c14fd8D4229a6ae35"
+    startBlock: 230761304
+  ComposableStablePoolV5Factory:
+    address: "0x60EF61C5C0f4213C7B2C02F64A575DC4BfDbF302"
+    startBlock: 230761496
+  ManagedPoolV2Factory:
+    address: "0x08e3814aD06be2A555a4c0d330A20078e5344DFd"
+    startBlock: 230761826
+  # ERC4626LinearPoolV4Factory:
+  #   address: ""
+  #   startBlock: 
