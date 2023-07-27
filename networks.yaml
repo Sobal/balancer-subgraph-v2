@@ -725,7 +725,7 @@ polygon-zkevm:
 
 
 neonmainnet:
-  network: neonmainnet
+  network: neonlabs
   # graft:
     # Mar 30
     # block: 16938731
@@ -749,7 +749,7 @@ neonmainnet:
   #   startBlock: 
 
 neondevnet:
-  network: neondevnet
+  network: neonlabs
   # graft:
     # Mar 30
     # block: 16938731
