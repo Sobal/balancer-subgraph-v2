@@ -633,7 +633,7 @@ polygon-zkevm:
     startBlock: 220536
 
 goerli:
-  network: neonlabs
+  network: goerli
   Vault:
     address: "0x7122e35ceC2eED4A989D9b0A71998534A203972C"
     startBlock: 9407942
