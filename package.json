@@ -14,6 +14,8 @@
     "deploy:goerli": "yarn generate-assets goerli && graph deploy --product hosted-service sobal/sobal-goerli subgraph.goerli.yaml",
     "deploy:neondevnet": "yarn generate-assets neondevnet && graph deploy sobal/sobal-pools subgraph.neondevnet.yaml --ipfs https://ch-ipfs.neontest.xyz/ --node https://ch2-graph.neontest.xyz/deploy/",
     "deploy:neonmainnet": "yarn generate-assets neonmainnet && graph deploy sobal/sobal-pools subgraph.neonmainnet.yaml --ipfs https://ipfs.neonevm.org/ --node https://thegraph.neonevm.org/deploy/",
+    "deploy:base-goerli": "yarn generate-assets base-goerli && graph deploy --studio sobal-base-goerli subgraph.base-goerli.yaml",
+    "deploy:base": "yarn generate-assets base && graph deploy --studio sobal-base subgraph.base.yaml",
     "deploy:local": "graph deploy balancer-labs/balancer-v2 subgraph.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
     "import-abis": "ts-node ./scripts/update-abis.ts",
     "generate-assets": "ts-node ./scripts/generate-assets",
