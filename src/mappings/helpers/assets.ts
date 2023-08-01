@@ -11,11 +11,11 @@ class Assets {
   public fxAggregators: Address[];
 }
 
-export const USDC_ADDRESS = Address.fromString('0x174956bDfbCEb6e53089297cce4fE2825E58d92C');
+export const USDC_ADDRESS = Address.fromString('0x3Ce827054de4536Fed802C0C466fAEe711AeA5ce');
 
 export const assets: Assets = {
   stableAssets: [
-    Address.fromString('0x174956bDfbCEb6e53089297cce4fE2825E58d92C'), // USDC
+    Address.fromString('0x3Ce827054de4536Fed802C0C466fAEe711AeA5ce'), // USDC
   ],
   pricingAssets: [
     Address.fromString('0x4200000000000000000000000000000000000006'), // WETH
