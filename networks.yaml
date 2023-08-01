@@ -709,3 +709,24 @@ base-goerli:
   ManagedPoolV2Factory:
     address: "0x08e3814aD06be2A555a4c0d330A20078e5344DFd"
     startBlock: 7822922
+
+base:
+  network: base
+  # graft:
+    # Mar 30
+    # block: 16938731
+    # always make sure the base subgraph has not been pruned
+    # it should be possible to run time travel queries on it going back to the vault's startBlock
+    # base: QmQnxRrmWbFUTfLFeHv8qi6Tf7ZMfrUVqoK7tvbF1tapbM
+  Vault:
+    address: "0x7122e35ceC2eED4A989D9b0A71998534A203972C"
+    startBlock: 2029566
+  WeightedPoolV4Factory:
+    address: "0x8D88057B8CC9235d4C69db3c14fd8D4229a6ae35"
+    startBlock: 2029831
+  ComposableStablePoolV5Factory:
+    address: "0x60EF61C5C0f4213C7B2C02F64A575DC4BfDbF302"
+    startBlock: 2029874
+  ManagedPoolV2Factory:
+    address: "0x08e3814aD06be2A555a4c0d330A20078e5344DFd"
+    startBlock: 2030061
