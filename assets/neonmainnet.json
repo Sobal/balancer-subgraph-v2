@@ -17,6 +17,10 @@
     {
       "address": "0x5f38248f339Bf4e84A2caf4e4c0552862dC9F82a",
       "symbol": "wSOL"
+    },
+    {
+      "address": "0x985b565665fb07133f2af74ee1c9b0adb29bd3d3",
+      "symbol": "SPT-stable"
     }
   ]
 }

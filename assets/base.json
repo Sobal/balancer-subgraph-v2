@@ -25,6 +25,10 @@
     {
       "address": "0x27d2decb4bfc9c76f0309b8e88dec3a601fe25a8",
       "symbol": "BALD"
+    },
+    {
+      "address": "0x6372Ec09dbf0c2907bB7B1529A1Fc6359310f1bd",
+      "symbol": "SPT-stable"
     }
   ]
 }
