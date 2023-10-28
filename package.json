@@ -4,7 +4,7 @@
   "scripts": {
     "create": "graph create balancer-labs/balancer-v2 --node https://api.thegraph.com/deploy/",
     "create:neondevnet": "graph create sobal/sobal-pools --node https://ch2-graph.neontest.xyz/deploy/",
-    "create:neonmainnet": "graph create sobal/sobal-pools --node https://thegraph.neonevm.org/deploy/",
+    "create:neonmainnet": "graph create sobal/sobal-pools --node https://neon-subgraph.sobal.fi/deploy/",
     "create:local": "graph create balancer-labs/balancer-v2 --node http://127.0.0.1:8020",
     "codegen": "yarn generate-manifests && graph codegen --output-dir src/types/",
     "build": "graph build",
@@ -13,7 +13,7 @@
     "deploy": "graph deploy balancer-labs/balancer-v2 --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "deploy:goerli": "yarn generate-assets goerli && graph deploy --product hosted-service sobal/sobal-goerli subgraph.goerli.yaml",
     "deploy:neondevnet": "yarn generate-assets neondevnet && graph deploy sobal/sobal-pools subgraph.neondevnet.yaml --ipfs https://ch-ipfs.neontest.xyz/ --node https://ch2-graph.neontest.xyz/deploy/",
-    "deploy:neonmainnet": "yarn generate-assets neonmainnet && graph deploy sobal/sobal-pools subgraph.neonmainnet.yaml --ipfs https://ipfs.neonevm.org/ --node https://thegraph.neonevm.org/deploy/",
+    "deploy:neonmainnet": "yarn generate-assets neonmainnet && graph deploy sobal/sobal-pools subgraph.neonmainnet.yaml --ipfs https://neon-subgraph.sobal.fi/ --node https://neon-subgraph.sobal.fi/deploy/",
     "deploy:base-goerli": "yarn generate-assets base-goerli && graph deploy --studio sobal-base-goerli subgraph.base-goerli.yaml",
     "deploy:base": "yarn generate-assets base && graph deploy --studio sobal-base subgraph.base.yaml",
     "deploy:local": "graph deploy balancer-labs/balancer-v2 subgraph.yaml --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
